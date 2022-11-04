@@ -2,17 +2,24 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/Link";
 import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
+//const router = useRouter();
+
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
+  const [navBg , setNavBg] = useState('#1d1d1f');
+  const [linkcolor ,setLinkColor] = useState('greeen-600');
 
   const handleNav = () => {
     setNav(!nav);
   };
+
+ 
 
   useEffect(() => {
     const handleShadow = () => {
@@ -27,9 +34,10 @@ const Navbar = () => {
 
   return (
     <div
+    style={{backgroundColor:`${navBg}`}}
       className={
         shadow
-          ? "fixed w-full h-20 shadow-xl shadow-green-200 z-[100]"
+          ? "fixed w-full h-20 shadow-md shadow-green-200 z-[100]"
           : "fixed w-full h-20 z-[100]"
       }
     >

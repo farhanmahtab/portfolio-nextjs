@@ -1,16 +1,75 @@
 import React from "react";
 import Image from "next/image";
+import nextjs from "../public/assets/nextjs.png";
+//import SkillCard from "./SkillCard";
 
 const Skills = () => {
   return (
-    <div id='skills' className="w-full lg:h-screen p-2">
+    <div id="skills" className="w-full lg:h-screen p-2 mt-6 mb-4">
       <div className="max-w-[1240px] m-auto flex flex-col justify-center h-full">
         <p className="text-xl tracking-widest uppercase text-[#4f8e38]">
           Skills
         </p>
         <h2 className="py-4 text-green-200">Things I can do</h2>
-        <div className="grid md:grid-cols-2 md-grid-cols-4 gap-8 text-green-200">
 
+        <div>
+          <p className="py-4 text-green-200 text-xl">Programming Languages</p>
+        </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-green-200">
+
+        <div className="p-6 shadow-md rounded-xl hover:scale-105 ease-in duration-300 shadow-green-200">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto animate-pulse">
+                <Image
+                  src="/../public/assets/cpp.png"
+                  width="64px"
+                  height="64px"
+                  alt=""
+                ></Image>
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>CPP</h3>
+              </div>
+            </div>
+          </div>
+          
+          <div className="p-6 shadow-md rounded-xl hover:scale-105 ease-in duration-300 shadow-green-200">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto animate-pulse">
+                <Image
+                  src="/../public/assets/java.png"
+                  width="64px"
+                  height="64px"
+                  alt=""
+                ></Image>
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>Java</h3>
+              </div>
+            </div>
+          </div>
+
+          <div className="p-6 shadow-md rounded-xl hover:scale-105 ease-in duration-300 shadow-green-200">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto animate-pulse bg-color-red">
+                <Image
+                  src="/../public/assets/java-script.png"
+                  width="64px"
+                  height="64px"
+                  alt=""
+                ></Image>
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>JavaScript</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <p className="py-4 text-green-200 text-xl">Frontend</p>
+        </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-green-200">
           <div className="p-6 shadow-md rounded-xl hover:scale-105 ease-in duration-300 shadow-green-200">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto animate-pulse">
@@ -45,22 +104,6 @@ const Skills = () => {
 
           <div className="p-6 shadow-md rounded-xl hover:scale-105 ease-in duration-300 shadow-green-200">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
-              <div className="m-auto animate-pulse bg-color-red">
-                <Image
-                  src="/../public/assets/java-script.png"
-                  width="64px"
-                  height="64px"
-                  alt=""
-                ></Image>
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <h3>JavaScript</h3>
-              </div>
-            </div>
-          </div>
-
-          <div className="p-6 shadow-md rounded-xl hover:scale-105 ease-in duration-300 shadow-green-200">
-            <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto animate-pulse">
                 <Image
                   src="/../public/assets/react.png"
@@ -74,7 +117,6 @@ const Skills = () => {
               </div>
             </div>
           </div>
-
           <div className="p-6 shadow-md rounded-xl hover:scale-105 ease-in duration-300 shadow-green-200">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto animate-pulse">
@@ -91,21 +133,48 @@ const Skills = () => {
             </div>
           </div>
 
+          
           <div className="p-6 shadow-md rounded-xl hover:scale-105 ease-in duration-300 shadow-green-200">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto animate-pulse">
                 <Image
-                  src="/../public/assets/java.png"
+                  src="/../public/assets/nextjs.png"
                   width="64px"
                   height="64px"
                   alt=""
                 ></Image>
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Java</h3>
+                <h3>NextJS</h3>
               </div>
             </div>
           </div>
+        </div>
+
+        <div>
+          <p className="py-4 text-green-200 text-xl">Backend</p>
+        </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-green-200">
+          <div className="p-6 shadow-md rounded-xl hover:scale-105 ease-in duration-300 shadow-green-200">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto animate-pulse">
+                <Image
+                  src="/../public/assets/nodejs.png"
+                  width="64px"
+                  height="64px"
+                  alt=""
+                ></Image>
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>NodeJS</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p className="py-4 text-green-200 text-xl">Databse</p>
+        </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-green-200">
 
           <div className="p-6 shadow-md rounded-xl hover:scale-105 ease-in duration-300 shadow-green-200">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
@@ -143,17 +212,19 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto animate-pulse">
                 <Image
-                  src="/../public/assets/nodejs.png"
+                  src="/../public/assets/postgresql.png"
                   width="64px"
                   height="64px"
                   alt=""
                 ></Image>
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>NodeJS</h3>
+                <h3>PostgreSQL</h3>
               </div>
             </div>
           </div>
+          
+
 
         </div>
       </div>
