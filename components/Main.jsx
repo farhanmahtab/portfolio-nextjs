@@ -4,7 +4,7 @@ import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 const Main = () => {
   return (
-    <div className="w-full h-screen text-center">
+    <div id='main' className="w-full h-screen text-center">
       <div className="max-w-[1280px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
           <p className="text-sm tracking-widest text-gray-200">

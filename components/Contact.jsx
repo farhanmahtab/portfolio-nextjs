@@ -7,7 +7,7 @@ import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 
 const Contact = () => {
   return (
-    <div className="w-full lg:h-screen">
+    <div id='contact' className="w-full lg:h-screen">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
         <p className="text-xl tracking-widest uppercase">Contact</p>
         <h2 className="py-4 tracking-widest text-green-200">Get In Touch</h2>
@@ -54,7 +54,7 @@ const Contact = () => {
           </div>
         </div>
         {/* Right */}
-        <div className="col-span-3 w-full h-auto shadow-xl shadow-green-200 rounded-lg p-4">
+        <div className="col-span-3 w-full h-auto shadow-md shadow-green-200 rounded-lg p-4">
           <div className="p-4 shadow-md">
             <h2 className="py-4 tracking-wider text-green-200">Contact Me</h2>
             <form action="">
@@ -103,14 +103,13 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        <div className="flex justify-center items-center
-         p-12">
-          <Link href="/">
-            <div className="rounded-full shadow-lg shadow-[#585c58] p-6 cursor-pointer hover:scale-115 ease-in duration-300">
-              <HiOutlineChevronDoubleUp size={30}/>
-            </div>
-          </Link>
-        </div>
+      </div>
+      <div className="flex justify-center py-12">
+        <Link href="/">
+          <div className="rounded-full shadow-lg shadow-[#585c58] p-6 cursor-pointer hover:scale-115 ease-in duration-300">
+            <HiOutlineChevronDoubleUp size={30} className="text-green-400"/>
+          </div>
+        </Link>
       </div>
     </div>
   );
