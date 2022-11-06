@@ -3,7 +3,12 @@ import Image from "next/image";
 import Link from "next/Link";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
+import {
+  AiOutlineClose,
+  AiOutlineMenu,
+  AiOutlineMail,
+  AiFillFacebook,
+} from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
@@ -12,14 +17,12 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-  const [navBg , setNavBg] = useState('#1d1d1f');
-  const [linkcolor ,setLinkColor] = useState('greeen-600');
+  const [navBg, setNavBg] = useState("#1d1d1f");
+  const [linkcolor, setLinkColor] = useState("greeen-600");
 
   const handleNav = () => {
     setNav(!nav);
   };
-
- 
 
   useEffect(() => {
     const handleShadow = () => {
@@ -34,17 +37,17 @@ const Navbar = () => {
 
   return (
     <div
-    style={{backgroundColor:`${navBg}`}}
+      style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
           ? "fixed w-full h-20 shadow-md shadow-green-200 z-[100]"
           : "fixed w-full h-20 z-[100]"
       }
     >
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px=16">
+      <div className="flex justify-between items-center w-full h-full px-1 2xl:px=16">
         <Link href="/">
           <Image
-            src="/../public/assets/kn (1).png"
+            src="/../public/assets/logo1.png"
             alt=""
             width="150"
             height="75"
@@ -95,14 +98,14 @@ const Navbar = () => {
         >
           <div>
             <div className="flex w-full items-center justify-between">
-              <Link href='/'>
-              <Image
-                className="rounded-full shadow-lg shadow-[#585c58] p-2 cursor-pointer"
-                src="/../public/assets/kn (1).png"
-                alt="/"
-                width="85"
-                height="43"
-              />
+              <Link href="/">
+                <Image
+                  className="rounded-full shadow-lg shadow-[#585c58] p-2 cursor-pointer"
+                  src="/../public/assets/kn (1).png"
+                  alt="/"
+                  width="85"
+                  height="43"
+                />
               </Link>
               <div
                 onClick={handleNav}
@@ -120,37 +123,55 @@ const Navbar = () => {
           <div className="py-4 flex-col">
             <ul className="uppercase">
               <Link href="/">
-                <li onClick={() => setNav(false)} className="py-2 text-md">Home</li>
+                <li onClick={() => setNav(false)} className="py-2 text-md">
+                  Home
+                </li>
               </Link>
               <Link href="/#about">
-                <li onClick={() => setNav(false)} className="py-2 text-md">About Me</li>
+                <li onClick={() => setNav(false)} className="py-2 text-md">
+                  About Me
+                </li>
               </Link>
               <Link href="/#skills">
-                <li onClick={() => setNav(false)} className="py-2 text-md">Skills</li>
+                <li onClick={() => setNav(false)} className="py-2 text-md">
+                  Skills
+                </li>
               </Link>
               <Link href="/#project">
-                <li onClick={() => setNav(false)} className="py-2 text-md">Projects</li>
+                <li onClick={() => setNav(false)} className="py-2 text-md">
+                  Projects
+                </li>
               </Link>
               <Link href="/#contact">
-                <li onClick={() => setNav(false)} className="py-2 text-md">Contacts</li>
+                <li onClick={() => setNav(false)} className="py-2 text-md">
+                  Contacts
+                </li>
               </Link>
             </ul>
             <div className="pt-40">
               <p className="py-4 tracking-widest text-[#bea12f]">
                 Let's Connect
               </p>
-              <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
+              <div className="flex items-center justify-between w-full sm:w-[80%]">
                 <div className="rounded-full shadow-lg shadow-[#585c58] p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaLinkedinIn />
+                  <Link href="https://www.linkedin.com/in/farhan-mahtab-mahi-72037320a/">
+                    <FaLinkedinIn />
+                  </Link>
                 </div>
                 <div className="rounded-full shadow-lg shadow-[#585c58] p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaGithub />
+                  <Link href="https://github.com/farhanmahtab">
+                    <FaGithub />
+                  </Link>
                 </div>
                 <div className="rounded-full shadow-lg shadow-[#585c58] p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <AiOutlineMail />
+                  <Link href="mailto:farhan.mahi1999@gmail.com">
+                    <AiOutlineMail />
+                  </Link>
                 </div>
                 <div className="rounded-full shadow-lg shadow-[#585c58] p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <BsFillPersonLinesFill />
+                  <Link href="https://www.facebook.com/farhan.mahtab.56">
+                    <AiFillFacebook />
+                  </Link>
                 </div>
               </div>
             </div>

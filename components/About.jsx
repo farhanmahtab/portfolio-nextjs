@@ -13,21 +13,13 @@ const About = () => {
           <h2 className="py-4 text-green-200">Who I Am.</h2>
           <p className="py-2 text-green-100">BIO Intro</p>
           <p className="py-2 text-green-100">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-            ullam beatae odio minus temporibus, quasi voluptatibus quas dicta
-            quibusdam vitae.
+           I am an undergrad student , majoring in Software Engineering in<a className="hover:text-green-700" href="https://www.sust.edu/"> Shahjalal University Of Science and Technology.</a> I am pursuing a career in computer science field.  
           </p>
           <p className="py-2 text-green-100">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo illo
-            est ab voluptate laudantium in recusandae temporibus placeat unde
-            magni!
+            I am interested in the field of <a className="hover:text-green-700" href="https://www.sas.com/en_us/insights/analytics/machine-learning.html">Machine learning</a>  ,<a className="hover:text-green-700" href="https://www.ibm.com/cloud/learn/data-science-introduction">Data science</a>  and <a className="hover:text-green-700"  href="https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-cloud-computing/">Cloud Computing</a>. 
           </p>
           <p className="py-2 text-green-100">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro
-            explicabo vero exercitationem recusandae maxime laudantium!
-          </p>
-          <p className="py-2 mb-2 text-green-100 underline cursor-pointer">
-            Projects link
+            My hoobies are coin collecting , gradening , playing games and reading comics.
           </p>
         </div>
         <div className="realative h-auto w-full mx-auto py-0 shadow-md mb-3  shadow-yellow-200 rounded-xl flex items-center justify-center hover:scale-105 ease-in duration-300">

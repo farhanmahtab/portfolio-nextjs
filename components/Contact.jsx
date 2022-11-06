@@ -1,13 +1,13 @@
 import React from "react";
 import Link from "next/link";
-import { AiOutlineMail } from "react-icons/ai";
+import { AiOutlineMail ,AiFillFacebook} from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+//import { BsFillPersonLinesFill } from "react-icons/bs";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 
 const Contact = () => {
   return (
-    <div id='contact' className="w-full lg:h-screen">
+    <div id="contact" className="w-full lg:h-screen">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
         <p className="text-xl tracking-widest uppercase">Contact</p>
         <h2 className="py-4 tracking-widest text-green-200">Get In Touch</h2>
@@ -38,16 +38,25 @@ const Contact = () => {
               <p className="uppercase text-xl pt-8">Lets get connceted</p>
               <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
                 <div className="rounded-full shadow-lg shadow-[#585c58] p-6 cursor-pointer hover:scale-115 ease-in duration-300">
-                  <FaLinkedinIn />
+                  <Link href="https://www.linkedin.com/in/farhan-mahtab-mahi-72037320a/">
+                    <FaLinkedinIn />
+                  </Link>
+                </div>
+
+                <div className="rounded-full shadow-lg shadow-[#585c58] p-6 cursor-pointer hover:scale-115 ease-in duration-300">
+                  <Link href="mailto:farhan.mahi1999@gmail.com">
+                    <AiOutlineMail />
+                  </Link>
                 </div>
                 <div className="rounded-full shadow-lg shadow-[#585c58] p-6 cursor-pointer hover:scale-115 ease-in duration-300">
-                  <FaGithub />
+                  <Link href="https://github.com/farhanmahtab">
+                    <FaGithub />
+                  </Link>
                 </div>
                 <div className="rounded-full shadow-lg shadow-[#585c58] p-6 cursor-pointer hover:scale-115 ease-in duration-300">
-                  <AiOutlineMail />
-                </div>
-                <div className="rounded-full shadow-lg shadow-[#585c58] p-6 cursor-pointer hover:scale-115 ease-in duration-300">
-                  <BsFillPersonLinesFill />
+                  <Link href="https://www.facebook.com/farhan.mahtab.56">
+                    <AiFillFacebook />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -107,7 +116,7 @@ const Contact = () => {
       <div className="flex justify-center py-12">
         <Link href="/">
           <div className="rounded-full shadow-lg shadow-[#585c58] p-6 cursor-pointer hover:scale-115 ease-in duration-300">
-            <HiOutlineChevronDoubleUp size={30} className="text-green-400"/>
+            <HiOutlineChevronDoubleUp size={30} className="text-green-400" />
           </div>
         </Link>
       </div>

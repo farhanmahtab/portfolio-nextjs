@@ -1,10 +1,11 @@
 import React from "react";
-import { AiOutlineMail } from "react-icons/ai";
+import Link from "next/Link";
+import { AiOutlineMail, AiFillFacebook } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 const Main = () => {
   return (
-    <div id='main' className="w-full h-screen text-center">
+    <div id="main" className="w-full h-screen text-center">
       <div className="max-w-[1280px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
           <p className="text-sm tracking-widest text-gray-200">
@@ -25,16 +26,24 @@ const Main = () => {
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <div className="rounded-full shadow-lg shadow-[#585c58] p-6 cursor-pointer hover:scale-115 ease-in duration-300">
-              <FaLinkedinIn />
+              <Link href="https://www.linkedin.com/in/farhan-mahtab-mahi-72037320a/">
+                <FaLinkedinIn />
+              </Link>
             </div>
             <div className="rounded-full shadow-lg shadow-[#585c58] p-6 cursor-pointer hover:scale-115 ease-in duration-300">
-              <FaGithub />
+              <Link href="https://github.com/farhanmahtab">
+                <FaGithub />
+              </Link>
             </div>
             <div className="rounded-full shadow-lg shadow-[#585c58] p-6 cursor-pointer hover:scale-115 ease-in duration-300">
-              <AiOutlineMail />
+              <Link href="mailto:farhan.mahi1999@gmail.com">
+                <AiOutlineMail />
+              </Link>
             </div>
             <div className="rounded-full shadow-lg shadow-[#585c58] p-6 cursor-pointer hover:scale-115 ease-in duration-300">
-              <BsFillPersonLinesFill />
+              <Link href="https://www.facebook.com/farhan.mahtab.56">
+                <AiFillFacebook />
+              </Link>
             </div>
           </div>
         </div>

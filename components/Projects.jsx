@@ -1,5 +1,8 @@
 import React from "react";
 import img from "../public/assets/travel.jpg";
+import iict from "../public/assets/iict.png"
+import blog from "../public/assets/blog.jpg"
+import game from "../public/assets/game.jpg"
 import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
@@ -13,22 +16,26 @@ const Projects = () => {
         <ProjectItem
           title="Travel Planner"
           backgroundImg={img}
-          projectURL="/travel"
+          projectURL="https://github.com/anindo9185/travel350"
+          desc="NextJS , TailwindCSS"
         />
         <ProjectItem
-          title="Travel Planner"
-          backgroundImg={img}
-          projectURL="/travel"
+          title="IICT Website"
+          backgroundImg={iict}
+          projectURL="https://github.com/Fahimefto/iict-sust-backend"
+          desc="nextJs , TailwindCSS ,   NodeJS , Cloudinery and MongoDB"
         />
         <ProjectItem
-          title="Travel Planner"
-          backgroundImg={img}
-          projectURL="/travel"
+          title="Blog App"
+          backgroundImg={blog}
+          projectURL="https://github.com/farhanmahtab/NodeJS-MongoDB-BlogApp-RestAPI"
+          desc="React ,NodeJS ,Express and MongoDB"
         />
         <ProjectItem
-          title="Travel Planner"
-          backgroundImg={img}
-          projectURL="/travel"
+          title="Astroid shooter"
+          backgroundImg={game}
+          projectURL="/https://github.com/farhanmahtab/raylib_game_project"
+          desc="CPP ,Using Raylib library"
         />
       </div>
   

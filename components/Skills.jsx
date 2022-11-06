@@ -172,7 +172,7 @@ const Skills = () => {
           </div>
         </div>
         <div>
-          <p className="py-4 text-green-200 text-xl">Databse</p>
+          <p className="py-4 text-green-200 text-xl">Database</p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-green-200">
 
