@@ -2,17 +2,17 @@ import React from "react";
 import Link from "next/Link";
 import { AiOutlineMail, AiFillFacebook } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+
 const Main = () => {
   return (
     <div id="main" className="w-full h-screen text-center">
       <div className="max-w-[1280px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
           <p className="text-sm tracking-widest text-gray-200">
-            Let's build something new
+            Let&apos;s build something new
           </p>
           <h1 className="py-4 text-gray-200">
-            Hi , I'm <span className="text-[#4f8e38]">Mahi</span>
+            Hi , I&apos;m <span className="text-[#4f8e38]">Mahi</span>
           </h1>
           <h1 className="py-2 text-gray-200">
             A <span className="text-[#4f8e38]">Full-Stack</span> web Developer

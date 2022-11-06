@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/Link";
 import { useState, useEffect } from "react";
-import { useRouter } from "next/router";
+
 import {
   AiOutlineClose,
   AiOutlineMenu,
@@ -10,7 +10,7 @@ import {
   AiFillFacebook,
 } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+
 
 //const router = useRouter();
 
@@ -150,7 +150,7 @@ const Navbar = () => {
             </ul>
             <div className="pt-40">
               <p className="py-4 tracking-widest text-[#bea12f]">
-                Let's Connect
+                Lets Connect
               </p>
               <div className="flex items-center justify-between w-full sm:w-[80%]">
                 <div className="rounded-full shadow-lg shadow-[#585c58] p-3 cursor-pointer hover:scale-105 ease-in duration-300">
