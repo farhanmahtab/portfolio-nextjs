@@ -19,7 +19,7 @@ const About = () => {
             I am interested in the field of <a className="hover:text-green-700" href="https://www.sas.com/en_us/insights/analytics/machine-learning.html">Machine learning</a>  ,<a className="hover:text-green-700" href="https://www.ibm.com/cloud/learn/data-science-introduction">Data science</a>  and <a className="hover:text-green-700"  href="https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-cloud-computing/">Cloud Computing</a>. 
           </p>
           <p className="py-2 text-green-100">
-            My hoobies are coin collecting , gradening , playing games and reading comics.
+            My hoobies are coin collecting , gardening , playing games and reading comics.
           </p>
         </div>
         <div className="realative h-auto w-full mx-auto py-0 shadow-md mb-3  shadow-yellow-200 rounded-xl flex items-center justify-center hover:scale-105 ease-in duration-300">
