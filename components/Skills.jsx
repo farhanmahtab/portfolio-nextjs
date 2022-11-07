@@ -35,7 +35,7 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto animate-pulse">
                 <Image
-                  src="/assets/java.png"
+                  src="java.png"
                   width="64px"
                   height="64px"
                   alt=""
