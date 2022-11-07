@@ -16,8 +16,7 @@ const Skills = () => {
           <p className="py-4 text-green-200 text-xl">Programming Languages</p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-green-200">
-
-        <div className="p-6 shadow-md rounded-xl hover:scale-105 ease-in duration-300 shadow-green-200">
+          <div className="p-6 shadow-md rounded-xl hover:scale-105 ease-in duration-300 shadow-green-200">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto animate-pulse">
                 <Image
@@ -32,7 +31,7 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          
+
           <div className="p-6 shadow-md rounded-xl hover:scale-105 ease-in duration-300 shadow-green-200">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto animate-pulse">
@@ -133,7 +132,6 @@ const Skills = () => {
             </div>
           </div>
 
-          
           <div className="p-6 shadow-md rounded-xl hover:scale-105 ease-in duration-300 shadow-green-200">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto animate-pulse">
@@ -175,7 +173,6 @@ const Skills = () => {
           <p className="py-4 text-green-200 text-xl">Database</p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-green-200">
-
           <div className="p-6 shadow-md rounded-xl hover:scale-105 ease-in duration-300 shadow-green-200">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto animate-pulse">
@@ -223,9 +220,6 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          
-
-
         </div>
       </div>
     </div>
