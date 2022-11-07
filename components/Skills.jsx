@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import nextjs from "../public/assets/nextjs.png";
-//import SkillCard from "./SkillCard";
 
 const Skills = () => {
   return (
@@ -36,7 +35,7 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto animate-pulse">
                 <Image
-                  src="/../public/assets/java.png"
+                  src="/assets/java.png"
                   width="64px"
                   height="64px"
                   alt=""
@@ -51,12 +50,7 @@ const Skills = () => {
           <div className="p-6 shadow-md rounded-xl hover:scale-105 ease-in duration-300 shadow-green-200">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto animate-pulse bg-color-red">
-                <Image
-                  src="/../public/assets/java-script.png"
-                  width="64px"
-                  height="64px"
-                  alt=""
-                ></Image>
+                <Image src={nextjs} width="64px" height="64px" alt=""></Image>
               </div>
               <div className="flex flex-col items-center justify-center">
                 <h3>JavaScript</h3>
