@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { AiOutlineMail ,AiFillFacebook} from "react-icons/ai";
+import { AiOutlineMail, AiFillFacebook } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 //import { BsFillPersonLinesFill } from "react-icons/bs";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
@@ -17,11 +17,13 @@ const Contact = () => {
         <div className="col-span-3 lg:col-span-2 w-full h-full  rounded-xl p-4 shadow-md shadow-green-300">
           <div className="lg:p-4 h-full">
             <div>
-              <img
-                className="rounded-xl hover:scale-105 ease-in duration-300 shadow-md shadow-blue-200"
-                src="https://images.unsplash.com/photo-1534536281715-e28d76689b4d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29udGFjdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                alt=""
-              />
+              <picture>
+                <img
+                  className="rounded-xl hover:scale-105 ease-in duration-300 shadow-md shadow-blue-200"
+                  src="https://images.unsplash.com/photo-1534536281715-e28d76689b4d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29udGFjdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                  alt=""
+                />
+              </picture>
             </div>
             <div>
               <h2 className="pt-4">Farhan Mahtab Mahi</h2>
