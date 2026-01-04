@@ -1,11 +1,24 @@
-import React from "react";
+import React, { FC } from "react";
 
 import Image from "next/image";
 import Link from "next/link";
+import { StaticImageData } from "next/image";
 
-const ProjectItem = ({ title, backgroundImg, projectURL, desc }) => {
+interface ProjectItemProps {
+  title: string;
+  backgroundImg: StaticImageData;
+  projectURL: string;
+  desc: string;
+}
+
+const ProjectItem: FC<ProjectItemProps> = ({
+  title,
+  backgroundImg,
+  projectURL,
+  desc,
+}) => {
   return (
-    <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-green-200 rounded-xl p-2 group hover:bg-gradient-to-r from bg-green-100 to bg-green-200">
+    <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-green-200 rounded-xl p-2 group hover:bg-linear-to-r from bg-green-200">
       <Image
         className="w-full h-auto m-auto rounded-xl group-hover:opacity-10"
         src={backgroundImg}

@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import img from "../../public/asset/img.jpg";
+import profileImage from "../../public/asset/profile_image.jpeg";
 import EXTERNAL_LINKS from "@/lib/constants/ExternalLinks";
 
 interface ExternalLinkProps {
@@ -30,7 +30,7 @@ export default function About() {
       id="about"
       className="w-full md:h-screen p-2 flex items-center py-16"
     >
-      <div className="max-w-[1240px] m-auto w-full md:grid grid-cols-3 gap-8">
+      <div className="max-w-310 m-auto w-full md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
           <p className="uppercase text-xl tracking-widest text-[#4f8e38]">
             About
@@ -72,7 +72,7 @@ export default function About() {
         <div className="relative h-auto w-full mx-auto py-0 shadow-md mb-3 shadow-yellow-200 rounded-xl flex items-center justify-center hover:scale-105 ease-in duration-300 transition-transform">
           <Image
             className="rounded-xl object-cover"
-            src={img}
+            src={profileImage}
             alt="Farhan Mahtab profile picture"
             priority
           />

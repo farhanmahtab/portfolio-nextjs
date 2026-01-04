@@ -16,7 +16,7 @@ const SkillCard: React.FC<SkillCardProps> = ({
   return (
     <div className="p-6 shadow-md rounded-xl hover:scale-105 ease-in duration-300 shadow-green-200 transition-transform cursor-pointer">
       <div className="grid grid-cols-2 gap-4 justify-center items-center">
-        <div className="m-auto animate-pulse">
+        <div className="m-auto">
           <Image
             className="w-full h-auto m-auto bg-white rounded-lg"
             src={background}

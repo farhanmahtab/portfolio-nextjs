@@ -3,19 +3,7 @@
 import React from "react";
 import SkillCard from "./SkillCard";
 import type { StaticImageData } from "next/image";
-
-import cpp from "../../public/asset/cpp.png";
-import java from "../../public/asset/java.png";
-import javaScript from "../../public/asset/js.png";
-import html from "../../public/asset/html.png";
-import css from "../../public/asset/css-3.png";
-import react from "../../public/asset/react.png";
-// import vue from "../../public/asset/vue.png";
-import nextjs from "../../public/asset/nextjs.png";
-import nodejs from "../../public/asset/nodejs.png";
-import mongodb from "../../public/asset/mongoDb.png";
-import sqlServer from "../../public/asset/sql-server.png";
-import postgresql from "../../public/asset/postgresql.png";
+import IMAGE_ASSETS from "@/lib/imageAssets";
 
 interface Skill {
   readonly id: string;
@@ -32,31 +20,37 @@ const SKILL_CATEGORIES: readonly SkillCategory[] = [
   {
     title: "Programming Languages",
     skills: [
-      { id: "cpp", title: "CPP", icon: cpp },
-      { id: "java", title: "Java", icon: java },
-      { id: "javascript", title: "JavaScript", icon: javaScript },
+      { id: "cpp", title: "CPP", icon: IMAGE_ASSETS.cpp },
+      { id: "java", title: "Java", icon: IMAGE_ASSETS.java },
+      { id: "javascript", title: "JavaScript", icon: IMAGE_ASSETS.javaScript },
+      { id: "ruby", title: "Ruby", icon: IMAGE_ASSETS.ruby },
+      { id: "python", title: "Python", icon: IMAGE_ASSETS.python },
     ],
   },
   {
     title: "Frontend",
     skills: [
-      { id: "html", title: "HTML", icon: html },
-      { id: "css", title: "CSS", icon: css },
-      { id: "react", title: "React", icon: react },
-      // { id: "vue", title: "Vue", icon: vue },
-      { id: "nextjs", title: "NextJS", icon: nextjs },
+      { id: "html", title: "HTML", icon: IMAGE_ASSETS.html },
+      { id: "css", title: "CSS", icon: IMAGE_ASSETS.css },
+      { id: "react", title: "React", icon: IMAGE_ASSETS.react },
+      { id: "nextjs", title: "NextJS", icon: IMAGE_ASSETS.nextjs },
     ],
   },
   {
     title: "Backend",
-    skills: [{ id: "nodejs", title: "NodeJS", icon: nodejs }],
+    skills: [
+      { id: "nodejs", title: "NodeJS", icon: IMAGE_ASSETS.nodejs },
+      { id: "rails", title: "Rails", icon: IMAGE_ASSETS.rails },
+      { id: "go", title: "Go", icon: IMAGE_ASSETS.go },
+    ],
   },
   {
     title: "Database",
     skills: [
-      { id: "mongodb", title: "MongoDB", icon: mongodb },
-      { id: "mysql", title: "mySQL", icon: sqlServer },
-      { id: "postgresql", title: "PostgreSQL", icon: postgresql },
+      { id: "mongodb", title: "MongoDB", icon: IMAGE_ASSETS.mongodb },
+      { id: "mysql", title: "mySQL", icon: IMAGE_ASSETS.mysql },
+      { id: "postgresql", title: "PostgreSQL", icon: IMAGE_ASSETS.postgresql },
+      { id: "sqlserver", title: "SQL Server", icon: IMAGE_ASSETS.sqlServer },
     ],
   },
 ] as const;

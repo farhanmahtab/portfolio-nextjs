@@ -124,7 +124,7 @@ const Navbar = () => {
   return (
     <header
       style={{ backgroundColor: NAV_BG_COLOR }}
-      className={`fixed w-full h-20 z-[100] transition-shadow duration-300 ${
+      className={`fixed w-full h-20 z-100 transition-shadow duration-300 ${
         hasShadow ? "shadow-md shadow-green-200" : ""
       }`}
     >
