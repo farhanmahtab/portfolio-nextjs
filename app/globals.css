@@ -4,6 +4,7 @@
   --background: #ffffff;
   --foreground: #171717;
   --primary-color: #2cc865;
+  --theme-color: #4f8e38;
 }
 
 @theme inline {

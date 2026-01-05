@@ -1,18 +1,19 @@
-import React from "react";
+"use client";
 import Link from "next/link";
 import { AiOutlineMail, AiFillFacebook } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-//import { BsFillPersonLinesFill } from "react-icons/bs";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 
 const Contact = () => {
   return (
     <div id="contact" className="w-full lg:h-screen">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
-        <p className="text-xl tracking-widest uppercase">Contact</p>
+        <p className="text-xl font-semibold tracking-widest uppercase text-[#4f8e38]">
+          Contact
+        </p>
         <h2 className="py-4 tracking-widest text-green-200">Get In Touch</h2>
       </div>
-      <div className="grid lg:grid-cols-5 gap-8">
+      <div className="grid lg:grid-cols-5 gap-8 lg:mx-20">
         {/* left */}
         <div className="col-span-3 lg:col-span-2 w-full h-full  rounded-xl p-4 shadow-md shadow-green-300">
           <div className="lg:p-4 h-full">
@@ -34,11 +35,11 @@ const Contact = () => {
               <p className="py-4 text-green-200">
                 I am learning and honing my skills.
               </p>
-              <p className=" text-green-200">Availabale for Freelance.</p>
+              <p className=" text-green-200">Available for Freelance.</p>
             </div>
             <div>
-              <p className="uppercase text-xl pt-8">Lets get connceted</p>
-              <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
+              <p className="uppercase text-xl pt-8">Lets get connected</p>
+              <div className="flex items-center justify-between max-w-82.5 m-auto py-4">
                 <div className="rounded-full shadow-lg shadow-[#585c58] p-6 cursor-pointer hover:scale-115 ease-in duration-300">
                   <Link href="https://www.linkedin.com/in/farhan-mahtab-mahi-72037320a/">
                     <FaLinkedinIn />
@@ -105,7 +106,7 @@ const Contact = () => {
                   className="border-2 rounded-lg p-3 flex border-green-200"
                   name=""
                   id=""
-                  rows="10"
+                  rows={10}
                 ></textarea>
               </div>
               <button className="text-lg w-full h-full mt-4  p-4">
@@ -116,7 +117,7 @@ const Contact = () => {
         </div>
       </div>
       <div className="flex justify-center py-12">
-        <Link href="/">
+        <Link href="/home">
           <div className="rounded-full shadow-lg shadow-[#585c58] p-6 cursor-pointer hover:scale-115 ease-in duration-300">
             <HiOutlineChevronDoubleUp size={30} className="text-green-400" />
           </div>

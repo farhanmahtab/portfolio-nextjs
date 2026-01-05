@@ -2,6 +2,7 @@
 
 import NAV_LINKS from "@/lib/constants/NavLinks";
 import SOCIAL_LINKS from "@/lib/constants/SocialLinks";
+import IMAGE_ASSETS from "@/lib/imageAssets";
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
@@ -87,7 +88,7 @@ const MobileNav = ({ isOpen, onClose }: MobileNavProps) => (
 
       <div className="absolute bottom-10 left-10 right-10">
         <p className="py-4 tracking-widest text-[#bea12f] text-sm font-semibold">
-          Let's Connect
+          Let&apos;s Connect
         </p>
         <div className="flex items-center justify-between gap-4">
           {SOCIAL_LINKS.map(({ href, icon: Icon, label }) => (
@@ -129,12 +130,12 @@ const Navbar = () => {
       }`}
     >
       <div className="flex justify-between items-center w-full h-full px-4 2xl:px-16">
-        <Link href="/" className="flex-shrink-0">
+        <Link href="/" className="shrink-0">
           <Image
-            src="/assets/logo1.png"
+            src={IMAGE_ASSETS.logoPng}
             alt="Logo"
-            width={150}
-            height={75}
+            width={90}
+            height={50}
             priority
           />
         </Link>

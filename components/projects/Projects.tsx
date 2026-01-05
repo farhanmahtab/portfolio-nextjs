@@ -13,7 +13,7 @@ const Projects: FC = () => {
           What i&#39;ve built
         </h2>
       </div>
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="grid md:grid-cols-2 gap-8 lg:mx-20">
         <ProjectItem
           title="IICT Website"
           backgroundImg={IMAGE_ASSETS.iict}
