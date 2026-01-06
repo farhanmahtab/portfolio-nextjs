@@ -14,15 +14,15 @@ const SkillCard: React.FC<SkillCardProps> = ({
   background,
 }): React.ReactElement => {
   return (
-    <div className="p-6 shadow-md rounded-xl hover:scale-105 ease-in duration-300 shadow-green-200 transition-transform cursor-pointer">
+    <div className="p-4 shadow-md rounded-xl hover:scale-105 ease-in duration-300 shadow-green-200 transition-transform cursor-pointer">
       <div className="grid grid-cols-2 gap-4 justify-center items-center">
         <div className="m-auto">
           <Image
             className="w-full h-auto m-auto bg-white rounded-lg"
             src={background}
             alt={`${title} icon`}
-            width={100}
-            height={100}
+            width={60}
+            height={60}
             loading="lazy"
           />
         </div>

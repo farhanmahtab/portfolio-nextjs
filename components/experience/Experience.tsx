@@ -51,8 +51,8 @@ const Experience: FC = () => {
   ];
 
   return (
-    <div id="experience" className="w-full my-5 mt-12 py-12">
-      <div className="max-w-310 mx-auto mt-10 px-2 pt-20">
+    <div id="experience" className="w-full mt-12">
+      <div className="max-w-310 mx-auto mt-10 px-2">
         <p className="text-xl font-semibold tracking-widest uppercase text-theme">
           Experience
         </p>

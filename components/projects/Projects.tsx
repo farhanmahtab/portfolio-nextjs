@@ -4,8 +4,8 @@ import IMAGE_ASSETS from "@/lib/imageAssets";
 
 const Projects: FC = () => {
   return (
-    <div id="project" className="w-full my-5 mt-12 py-12">
-      <div className="max-w-310 mx-auto mt-10 px-2 py-10 ">
+    <div id="project" className="w-full my-5">
+      <div className="max-w-310 mx-auto px-2 mb-12">
         <p className="text-xl font-semibold tracking-widest uppercase text-[#4f8e38]">
           Projects
         </p>

@@ -4,6 +4,8 @@ interface ExternalLink {
 }
 
 interface ExternalLinksConfig {
+  readonly bizotion: ExternalLink;
+  readonly shellbeehaken: ExternalLink;
   readonly university: ExternalLink;
   readonly machineLearning: ExternalLink;
   readonly dataScience: ExternalLink;
@@ -11,6 +13,14 @@ interface ExternalLinksConfig {
 }
 
 const EXTERNAL_LINKS = {
+  bizotion: {
+    text: "BizMotion Limited",
+    href: "https://www.biz-motion.com/",
+  },
+  shellbeehaken: {
+    text: "Shellbeehaken Limited",
+    href: "https://shellbeehaken.com/",
+  },
   university: {
     text: "Shahjalal University Of Science and Technology",
     href: "https://www.sust.edu/",

@@ -7,7 +7,7 @@ import Skills from "@/components/skill/Skills";
 
 export default function page() {
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col">
       <Main />
       <About />
       <Skills />

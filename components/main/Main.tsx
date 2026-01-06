@@ -5,17 +5,20 @@ import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 export default function Main() {
   return (
     <div id="main" className="w-full h-screen text-center">
-      <div className="max-w-[1280px] w-full h-full mx-auto p-2 flex justify-center items-center">
+      <div className="max-w-7xl w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
           <p className="text-sm tracking-widest text-gray-200">
             Let&apos;s build something new
           </p>
-          <h1 className="py-4 text-gray-200 text-3xl">
+          <h1 className="py-4 text-gray-200 text-4xl">
             Hi , I&apos;m <span className="font-bold text-[#4f8e38]">Mahi</span>
           </h1>
-          <h1 className="py-2 text-gray-200">
-            A <span className="text-[#4f8e38] font-bold">Full-Stack</span> web
-            Developer
+          <h1 className="py-2 text-4xl text-gray-200">
+            A{" "}
+            <span className="text-4xl text-[#4f8e38] font-bold">
+              Full-Stack
+            </span>{" "}
+            web Developer
           </h1>
           <p className="py-4 text-gray-200 max-w-[70%] m-auto">
             Software Engineer with hands-on experience designing and building
