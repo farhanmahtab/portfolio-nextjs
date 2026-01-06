@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import PersonSchema from "@/components/schema/PersonSchema";
+import { SEO_CONFIG } from "@/lib/seo/seoConfig";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,39 +16,30 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Farhan Mahi | Full-Stack Software Engineer",
-  description:
-    "Full-stack software engineer specializing in Ruby on Rails, Next.js, PostgreSQL, and distributed systems. View my portfolio, experience, and projects.",
-  keywords: [
-    "software engineer",
-    "full-stack developer",
-    "Next.js",
-    "Rails",
-    "React",
-  ],
-  authors: [{ name: "Farhan Mahi" }],
+  title: SEO_CONFIG.siteTitle,
+  description: SEO_CONFIG.siteDescription,
+  keywords: SEO_CONFIG.keywords,
+  authors: [{ name: SEO_CONFIG.author }],
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://yoursite.com",
-    title: "Farhan Mahi | Full-Stack Software Engineer",
-    description:
-      "Full-stack software engineer with expertise in scalable systems and clean code.",
+    url: SEO_CONFIG.siteUrl,
+    title: SEO_CONFIG.siteTitle,
+    description: SEO_CONFIG.siteDescription,
     images: [
       {
-        url: "https://yoursite.com/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Farhan Mahi Portfolio",
+        url: SEO_CONFIG.ogImage.url,
+        width: SEO_CONFIG.ogImage.width,
+        height: SEO_CONFIG.ogImage.height,
+        alt: SEO_CONFIG.ogImage.alt,
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Farhan Mahi | Full-Stack Software Engineer",
-    description:
-      "Full-stack software engineer specializing in scalable systems.",
-    images: ["https://yoursite.com/twitter-image.jpg"],
+    title: SEO_CONFIG.siteTitle,
+    description: SEO_CONFIG.siteDescription,
+    images: [SEO_CONFIG.twitterImage],
   },
 };
 

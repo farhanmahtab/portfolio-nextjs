@@ -3,7 +3,7 @@ export default function PersonSchema() {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Farhan Mahi",
-    url: "https://yoursite.com",
+    url: "https://mahi-one.vercel.app/.com",
     email: "farhan.mahi1999@gmail.com",
     jobTitle: "Software Engineer",
     sameAs: [
