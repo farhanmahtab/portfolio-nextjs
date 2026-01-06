@@ -48,8 +48,8 @@ const MobileNav = ({ isOpen, onClose }: MobileNavProps) => (
       <div className="flex w-full items-center justify-between mb-4">
         <Link href="/home" onClick={onClose}>
           <Image
-            className="rounded-full shadow-lg shadow-[#585c58] p-2 cursor-pointer"
-            src="/asset/cpp.png"
+            className="shadow-lg shadow-[#585c58] p-2 cursor-pointer"
+            src={IMAGE_ASSETS.logoPng}
             alt="Logo"
             width={85}
             height={43}
