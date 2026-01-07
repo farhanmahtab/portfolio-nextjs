@@ -2,7 +2,7 @@ import About from "@/components/about/About";
 import Contact from "@/components/contact/Contact";
 import Experience from "@/components/experience/Experience";
 import Main from "@/components/main/Main";
-import Projects from "@/components/projects/Projects";
+import Showcase from "@/components/projects/Showcase";
 import Skills from "@/components/skill/Skills";
 
 export default function page() {
@@ -12,7 +12,7 @@ export default function page() {
       <About />
       <Skills />
       <Experience />
-      <Projects />
+      <Showcase />
       <Contact />
     </div>
   );

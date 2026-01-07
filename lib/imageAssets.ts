@@ -1,5 +1,5 @@
 import type { StaticImageData } from "next/image";
-import logoPng from "../public/asset/logo3.png";
+import logoSvg from "../public/asset/logo.svg";
 import iictPng from "../public/asset/iict.png";
 import blogJpg from "../public/asset/blog.jpg";
 import cppPng from "../public/asset/cpp.png";
@@ -18,9 +18,14 @@ import mySqlPng from "../public/asset/mySql.png";
 import mongoDbPng from "../public/asset/mongoDb.png";
 import sqlServerPng from "../public/asset/sql-server.png";
 import postgresqlPng from "../public/asset/postgresql.png";
+import kriyakarakPng from "../public/asset/kriyakarak.png";
+import mapageecPng from "../public/asset/mapage-ec.png";
+import mapageUserPng from "../public/asset/mapage-user.png";
+import mapageSpacePng from "../public/asset/mapage-space.png";
+import cypress from "../public/asset/cypress.png";
 
 const assetPaths = {
-  logoPng: "logo3.png",
+  logoSvg: "logo.svg",
   iict: "iict.png",
   blog: "blog.jpg",
   cpp: "cpp.png",
@@ -39,6 +44,11 @@ const assetPaths = {
   mongodb: "mongoDb.png",
   sqlServer: "sql-server.png",
   postgresql: "postgresql.png",
+  kriyakarak: "kriyakarak.png",
+  mapageEc: "mapage-ec.png",
+  mapageUser: "mapage-user.png",
+  mapageSpace: "mapage-space.png",
+  cypress: "cypress.png",
 } as const;
 
 type ImageAssets = {
@@ -46,7 +56,7 @@ type ImageAssets = {
 };
 
 const IMAGE_ASSETS: ImageAssets = {
-  logoPng: logoPng,
+  logoSvg: logoSvg,
   iict: iictPng,
   blog: blogJpg,
   cpp: cppPng,
@@ -65,6 +75,11 @@ const IMAGE_ASSETS: ImageAssets = {
   mongodb: mongoDbPng,
   sqlServer: sqlServerPng,
   postgresql: postgresqlPng,
+  kriyakarak: kriyakarakPng,
+  mapageEc: mapageecPng,
+  mapageUser: mapageUserPng,
+  mapageSpace: mapageSpacePng,
+  cypress: cypress,
 };
 
 export type { ImageAssets };

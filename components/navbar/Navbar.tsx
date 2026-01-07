@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import Logo from "../logo/Logo";
 
 const SCROLL_THRESHOLD = 90;
 const NAV_BG_COLOR = "#1d1d1f";
@@ -47,13 +48,13 @@ const MobileNav = ({ isOpen, onClose }: MobileNavProps) => (
     >
       <div className="flex w-full items-center justify-between mb-4">
         <Link href="/home" onClick={onClose}>
-          <Image
-            className="shadow-lg shadow-[#585c58] p-2 cursor-pointer"
-            src={IMAGE_ASSETS.logoPng}
+          {/* <Image
+            className="shadow-sm shadow-[#585c58] cursor-pointer"
+            src={IMAGE_ASSETS.logoSvg}
             alt="Logo"
             width={85}
-            height={43}
-          />
+            height={83}
+          /> */}
         </Link>
         <button
           onClick={onClose}
@@ -126,18 +127,18 @@ const Navbar = () => {
     <header
       style={{ backgroundColor: NAV_BG_COLOR }}
       className={`fixed w-full h-20 z-100 transition-shadow duration-300 ${
-        hasShadow ? "shadow-md shadow-green-200" : ""
+        hasShadow ? "shadow-sm shadow-green-200" : ""
       }`}
     >
       <div className="flex justify-between items-center w-full h-full px-4 2xl:px-16">
         <Link href="/" className="shrink-0">
-          <Image
-            src={IMAGE_ASSETS.logoPng}
+          {/* <Image
+            src={IMAGE_ASSETS.logoSvg}
             alt="Logo"
-            width={90}
-            height={50}
+            width={100}
+            height={100}
             priority
-          />
+          /> */}
         </Link>
 
         <DesktopNav />

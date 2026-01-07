@@ -3,7 +3,7 @@ export const getVersion = () => {
     JSON.stringify({
       name: "Portfolio",
       version: "2.0.2",
-      "build-time": "2026-01-7 01.15:00AM BST",
+      "build-time": "2026-01-07 10.15:00AM BST",
       "current-time": new Date().toISOString(),
     }),
     {

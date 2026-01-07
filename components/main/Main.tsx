@@ -18,7 +18,7 @@ export default function Main() {
             <span className="text-4xl text-[#4f8e38] font-bold">
               Full-Stack
             </span>{" "}
-            web Developer
+            Web Developer
           </h1>
           <p className="py-4 text-gray-200 max-w-[70%] m-auto">
             Software Engineer with hands-on experience designing and building
