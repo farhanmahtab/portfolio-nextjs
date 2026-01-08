@@ -27,19 +27,19 @@ const Showcase: FC = () => {
           desc="React ,NodeJS ,Express, MongoDB ,AWS ,SSLCommerce"
         />
         <ShowcaseItem
-          title="MaPage EC"
+          title="Mapage EC"
           backgroundImg={IMAGE_ASSETS.mapageEc}
           projectURL="https://shellbeehaken.com/portfolio/1"
           desc="NextJS, React ,NodeJS ,Express and MongoDB"
         />
         <ShowcaseItem
-          title="MaPage User"
+          title="Mapage User"
           backgroundImg={IMAGE_ASSETS.mapageUser}
           projectURL="https://shellbeehaken.com/portfolio/2"
           desc="NextJS, React ,NodeJS ,Express and MongoDB"
         />
         <ShowcaseItem
-          title="MaPage Space Management"
+          title="Mapage Space Management"
           backgroundImg={IMAGE_ASSETS.mapageSpace}
           projectURL="https://shellbeehaken.com/portfolio/4"
           desc="NextJS, React ,NodeJS ,Express and MongoDB"
