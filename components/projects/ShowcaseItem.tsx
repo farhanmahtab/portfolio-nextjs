@@ -1,41 +1,48 @@
+"use client";
 import React, { FC } from "react";
-
 import Image from "next/image";
 import Link from "next/link";
 import { StaticImageData } from "next/image";
+import { motion } from "framer-motion";
 
 interface ShowcaseItemProps {
+  id: string;
   title: string;
   backgroundImg: StaticImageData;
-  projectURL: string;
   desc: string;
 }
 
 const ShowcaseItem: FC<ShowcaseItemProps> = ({
+  id,
   title,
   backgroundImg,
-  projectURL,
   desc,
 }) => {
   return (
-    <div className="relative flex items-center justify-center h-auto w-full shadow-lg shadow-green-200 rounded-xl p-2 group hover:bg-linear-to-r from bg-green-200">
+    <motion.div 
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      whileHover={{ y: -5 }}
+      className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-[#1a1a1a] rounded-2xl overflow-hidden group bg-[#2d2d2d]"
+    >
       <Image
-        className="w-full h-auto m-auto rounded-xl group-hover:opacity-10"
+        className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-110 group-hover:opacity-20"
         src={backgroundImg}
-        alt="/"
-      ></Image>
-      <div className="hidden group-hover:block absolute top-50% left-50% ">
-        <h3 className="text-2xl tracking-wider text-green-600 text-center">
+        alt={title}
+      />
+      <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6 bg-black/40 backdrop-blur-sm">
+        <h3 className="text-3xl font-bold tracking-tight text-white text-center mb-2">
           {title}
         </h3>
-        <p className="pt-2 pb-4 text-green-600 text-center ">{desc}</p>
-        <Link href={projectURL}>
-          <p className="py-4 text-center bg-green-600 text-green-100 rounded-xl font-bold text-lg cursor-pointer">
+        <p className="text-gray-200 text-center mb-6 line-clamp-2">{desc}</p>
+        <Link href={`/projects/${id}`}>
+          <p className="px-8 py-3 bg-[#4f8e38] text-white rounded-full font-bold text-lg cursor-pointer transform transition hover:scale-105 active:scale-95 shadow-lg">
             More info
           </p>
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

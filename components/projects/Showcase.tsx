@@ -1,55 +1,41 @@
+"use client";
 import React, { FC } from "react";
-import IMAGE_ASSETS from "@/lib/imageAssets";
 import ShowcaseItem from "./ShowcaseItem";
+import { PROJECTS } from "@/lib/projects";
+import { motion } from "framer-motion";
 
 const Showcase: FC = () => {
   return (
-    <div id="showcase" className="w-full my-5">
-      <div className="max-w-310 mx-auto px-2 mb-12">
-        <p className="text-xl font-semibold tracking-widest uppercase text-[#4f8e38]">
+    <div id="showcase" className="w-full my-5 py-16">
+      <div className="max-w-7xl mx-auto px-4 mb-12">
+        <motion.p 
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          className="text-xl font-bold tracking-widest uppercase text-[#4f8e38]"
+        >
           Showcase
-        </p>
-        <h2 className="py-2 tracking-widest text-green-200">
-          Products i&#39;ve worked on
-        </h2>
+        </motion.p>
+        <motion.h2 
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.1 }}
+          className="py-4 text-3xl md:text-4xl font-extrabold tracking-tight text-white"
+        >
+          Products I&#39;ve worked on
+        </motion.h2>
       </div>
-      <div className="grid md:grid-cols-2 gap-8 lg:mx-20">
-        <ShowcaseItem
-          title="Cypress"
-          backgroundImg={IMAGE_ASSETS.cypress}
-          projectURL="https://cypress.bizmotionapp.com/"
-          desc="Ruby on Rails ,NextJs ,TailwindCSS ,RSpec and PostgreSQL"
-        />
-        <ShowcaseItem
-          title="Kriyakarak"
-          backgroundImg={IMAGE_ASSETS.kriyakarak}
-          projectURL="https://kriyakarak.com/"
-          desc="React ,NodeJS ,Express, MongoDB ,AWS ,SSLCommerce"
-        />
-        <ShowcaseItem
-          title="Mapage EC"
-          backgroundImg={IMAGE_ASSETS.mapageEc}
-          projectURL="https://shellbeehaken.com/portfolio/1"
-          desc="NextJS, React ,NodeJS ,Express and MongoDB"
-        />
-        <ShowcaseItem
-          title="Mapage User"
-          backgroundImg={IMAGE_ASSETS.mapageUser}
-          projectURL="https://shellbeehaken.com/portfolio/2"
-          desc="NextJS, React ,NodeJS ,Express and MongoDB"
-        />
-        <ShowcaseItem
-          title="Mapage Space Management"
-          backgroundImg={IMAGE_ASSETS.mapageSpace}
-          projectURL="https://shellbeehaken.com/portfolio/4"
-          desc="NextJS, React ,NodeJS ,Express and MongoDB"
-        />
-        <ShowcaseItem
-          title="IICT Website"
-          backgroundImg={IMAGE_ASSETS.iict}
-          projectURL="https://github.com/Fahimefto/iict-sust-backend"
-          desc="nextJs ,TailwindCSS ,NodeJS ,Cloudinery and MongoDB"
-        />
+      <div className="grid md:grid-cols-2 gap-10 max-w-7xl mx-auto px-4">
+        {PROJECTS.map((project, index) => (
+          <ShowcaseItem
+            key={project.id}
+            id={project.id}
+            title={project.title}
+            backgroundImg={project.backgroundImg}
+            desc={project.shortDesc}
+          />
+        ))}
       </div>
     </div>
   );
