@@ -12,16 +12,16 @@ const Showcase: FC = () => {
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="text-xl font-bold tracking-widest uppercase text-[#4f8e38]"
+          className="text-xl tracking-widest uppercase text-primary font-semibold"
         >
-          Showcase
+          Project Showcase
         </motion.p>
         <motion.h2 
-          initial={{ opacity: 0, x: -20 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
-          className="py-4 text-3xl md:text-4xl font-extrabold tracking-tight text-white"
+          className="py-4 text-3xl md:text-4xl font-extrabold tracking-tight text-foreground"
         >
           Products I&#39;ve worked on
         </motion.h2>

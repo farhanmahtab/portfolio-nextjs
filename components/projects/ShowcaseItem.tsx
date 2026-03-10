@@ -24,10 +24,10 @@ const ShowcaseItem: FC<ShowcaseItemProps> = ({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       whileHover={{ y: -5 }}
-      className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-[#1a1a1a] rounded-2xl overflow-hidden group bg-[#2d2d2d]"
+      className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-black/5 rounded-2xl overflow-hidden group bg-card border border-border"
     >
       <Image
-        className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-110 group-hover:opacity-20"
+        className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-110 group-hover:opacity-10"
         src={backgroundImg}
         alt={title}
       />

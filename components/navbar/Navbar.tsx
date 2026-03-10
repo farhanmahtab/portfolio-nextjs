@@ -18,7 +18,7 @@ const DesktopNav = () => (
       <li key={href}>
         <Link
           href={href}
-          className="text-sm uppercase hover:border-b-2 border-green-400 transition-all duration-300"
+          className="text-sm font-bold uppercase hover:text-primary text-foreground transition-all duration-300 tracking-widest"
         >
           {label}
         </Link>
@@ -36,62 +36,57 @@ const MobileNav = ({ isOpen, onClose }: MobileNavProps) => (
   <>
     {isOpen && (
       <div
-        className="md:hidden fixed inset-0 bg-white/20 z-40"
+        className="md:hidden fixed inset-0 bg-black/60 backdrop-blur-sm z-[110]"
         onClick={onClose}
       />
     )}
 
     <div
-      className={`fixed left-0 top-0 w-[75%] sm:w-[65%] h-screen bg-[#1d1d1f] p-10 transform transition-transform duration-500 ease-in z-50 ${
-        isOpen ? "translate-x-0" : "-translate-x-full"
+      className={`fixed right-0 top-0 w-[85%] sm:w-[50%] h-screen bg-background p-10 transform transition-transform duration-500 ease-in-out z-[120] border-l border-border ${
+        isOpen ? "translate-x-0" : "translate-x-full"
       }`}
     >
-      <div className="flex w-full items-center justify-between mb-4">
+      <div className="flex w-full items-center justify-between mb-8">
         <Link href="/home" onClick={onClose}>
-          {/* <Image
-            className="shadow-sm shadow-[#585c58] cursor-pointer"
-            src={IMAGE_ASSETS.logoSvg}
-            alt="Logo"
-            width={85}
-            height={83}
-          /> */}
+          <h1 className="text-2xl font-bold text-primary tracking-tight">MAHI</h1>
         </Link>
         <button
           onClick={onClose}
-          className="rounded-full shadow-lg shadow-[#585c58] p-3 cursor-pointer hover:scale-110 transition-transform"
+          className="rounded-full bg-accent p-4 cursor-pointer hover:scale-110 shadow-lg border border-border text-foreground transition-all"
           aria-label="Close menu"
         >
           <AiOutlineClose size={25} />
         </button>
       </div>
 
-      <div className="border-b border-[#585c58] my-4">
-        <p className="w-[85%] md:w-[90%] py-4 text-sm">
-          From dust I have come, Dust shall I be.
+      <div className="border-b border-border my-8">
+        <p className="w-[85%] md:w-[90%] py-4 text-muted-foreground italic font-serif">
+          &quot;Building digital experiences that matter.&quot;
         </p>
       </div>
 
-      <nav className="py-4">
-        <ul className="uppercase space-y-4">
+      <nav className="py-8">
+        <ul className="uppercase space-y-8">
           {NAV_LINKS.map(({ href, label }) => (
             <li key={href}>
               <Link
                 href={href}
                 onClick={onClose}
-                className="text-md hover:text-green-400 transition-colors"
+                className="text-xl font-bold tracking-widest hover:text-primary text-foreground transition-all flex items-center justify-between group"
               >
                 {label}
+                <div className="w-0 h-0.5 bg-primary group-hover:w-8 transition-all duration-300" />
               </Link>
             </li>
           ))}
         </ul>
       </nav>
 
-      <div className="absolute bottom-10 left-10 right-10">
-        <p className="py-4 tracking-widest text-[#bea12f] text-sm font-semibold">
-          Let&apos;s Connect
+      <div className="absolute bottom-12 left-10 right-10">
+        <p className="py-4 tracking-[0.2em] text-primary text-xs font-bold uppercase mb-4">
+          Connect
         </p>
-        <div className="flex items-center justify-between gap-4">
+        <div className="flex items-center gap-6">
           {SOCIAL_LINKS.map(({ href, icon: Icon, label }) => (
             <Link
               key={label}
@@ -99,7 +94,7 @@ const MobileNav = ({ isOpen, onClose }: MobileNavProps) => (
               target="_blank"
               rel="noopener noreferrer"
               aria-label={label}
-              className="rounded-full shadow-lg shadow-[#585c58] p-3 cursor-pointer hover:scale-105 transition-transform duration-300"
+              className="rounded-full bg-accent p-4 cursor-pointer hover:scale-110 hover:text-primary text-muted-foreground transition-all border border-border shadow-lg"
             >
               <Icon size={20} />
             </Link>
@@ -109,6 +104,8 @@ const MobileNav = ({ isOpen, onClose }: MobileNavProps) => (
     </div>
   </>
 );
+
+import { ThemeToggle } from "./ThemeToggle";
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -125,32 +122,29 @@ const Navbar = () => {
 
   return (
     <header
-      style={{ backgroundColor: NAV_BG_COLOR }}
-      className={`fixed w-full h-20 z-100 transition-shadow duration-300 ${
-        hasShadow ? "shadow-sm shadow-green-200" : ""
+      className={`fixed w-full h-20 z-[100] transition-all duration-300 ${
+        hasShadow 
+          ? "bg-background/80 backdrop-blur-md shadow-lg border-b border-border" 
+          : "bg-transparent"
       }`}
     >
-      <div className="flex justify-between items-center w-full h-full px-4 2xl:px-16">
+      <div className="flex justify-between items-center w-full h-full px-4 2xl:px-16 max-w-7xl mx-auto">
         <Link href="/" className="shrink-0">
-          {/* <Image
-            src={IMAGE_ASSETS.logoSvg}
-            alt="Logo"
-            width={100}
-            height={100}
-            priority
-          /> */}
+          <h1 className="text-2xl font-bold text-primary tracking-tight hover:scale-105 transition-transform">MAHI</h1>
         </Link>
 
-        <DesktopNav />
-
-        <button
-          onClick={() => setIsNavOpen(true)}
-          className="md:hidden cursor-pointer hover:scale-110 transition-transform"
-          aria-label="Open menu"
-          aria-expanded={isNavOpen}
-        >
-          <AiOutlineMenu size={25} />
-        </button>
+        <div className="flex items-center gap-8">
+          <DesktopNav />
+          <ThemeToggle />
+          <button
+            onClick={() => setIsNavOpen(true)}
+            className="md:hidden cursor-pointer hover:scale-110 transition-transform p-2 text-foreground"
+            aria-label="Open menu"
+            aria-expanded={isNavOpen}
+          >
+            <AiOutlineMenu size={25} />
+          </button>
+        </div>
       </div>
 
       <MobileNav isOpen={isNavOpen} onClose={() => setIsNavOpen(false)} />

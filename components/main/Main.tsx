@@ -13,20 +13,20 @@ export default function Main() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <p className="text-sm tracking-widest text-gray-200 uppercase">
+          <p className="text-sm tracking-widest text-muted-foreground uppercase">
             Let&apos;s build something new together
           </p>
-          <h1 className="py-4 text-gray-200 text-5xl md:text-6xl font-extrabold tracking-tight">
-            Hi, I&apos;m <span className="text-[#4f8e38]">Mahi</span>
+          <h1 className="py-4 text-foreground text-5xl md:text-6xl font-extrabold tracking-tight">
+            Hi, I&apos;m <span className="text-primary">Mahi</span>
           </h1>
-          <h1 className="py-2 text-4xl md:text-5xl text-gray-200 font-bold">
+          <h1 className="py-2 text-4xl md:text-5xl text-foreground font-bold">
             A{" "}
-            <span className="text-[#4f8e38]">
+            <span className="text-primary">
               Full-Stack
             </span>{" "}
             Web Developer
           </h1>
-          <p className="py-6 text-gray-300 max-w-[80%] md:max-w-[70%] m-auto text-lg leading-relaxed">
+          <p className="py-6 text-muted-foreground max-w-[80%] md:max-w-[70%] m-auto text-lg leading-relaxed">
             Software Engineer with hands-on experience designing and building
             scalable backend systems and full-stack web applications. Strong
             expertise in Ruby on Rails, Next.js, PostgreSQL, and distributed
@@ -44,22 +44,22 @@ export default function Main() {
             </Link>
             
             <div className="flex items-center justify-between gap-4">
-              <div className="rounded-full shadow-lg shadow-[#1a1a1a] p-4 cursor-pointer hover:scale-110 hover:text-[#4f8e38] ease-in duration-300 bg-[#2d2d2d]">
+              <div className="rounded-full shadow-lg shadow-black/5 p-4 cursor-pointer hover:scale-110 hover:text-primary ease-in duration-300 bg-accent text-foreground border border-border">
                 <Link href="https://www.linkedin.com/in/farhan-mahtab-mahi-72037320a/">
                   <FaLinkedinIn size={20} />
                 </Link>
               </div>
-              <div className="rounded-full shadow-lg shadow-[#1a1a1a] p-4 cursor-pointer hover:scale-110 hover:text-[#4f8e38] ease-in duration-300 bg-[#2d2d2d]">
+              <div className="rounded-full shadow-lg shadow-black/5 p-4 cursor-pointer hover:scale-110 hover:text-primary ease-in duration-300 bg-accent text-foreground border border-border">
                 <Link href="https://github.com/farhanmahtab">
                   <FaGithub size={20} />
                 </Link>
               </div>
-              <div className="rounded-full shadow-lg shadow-[#1a1a1a] p-4 cursor-pointer hover:scale-110 hover:text-[#4f8e38] ease-in duration-300 bg-[#2d2d2d]">
+              <div className="rounded-full shadow-lg shadow-black/5 p-4 cursor-pointer hover:scale-110 hover:text-primary ease-in duration-300 bg-accent text-foreground border border-border">
                 <Link href="mailto:farhan.mahi1999@gmail.com">
                   <AiOutlineMail size={20} />
                 </Link>
               </div>
-              <div className="rounded-full shadow-lg shadow-[#1a1a1a] p-4 cursor-pointer hover:scale-110 hover:text-[#4f8e38] ease-in duration-300 bg-[#2d2d2d]">
+              <div className="rounded-full shadow-lg shadow-black/5 p-4 cursor-pointer hover:scale-110 hover:text-primary ease-in duration-300 bg-accent text-foreground border border-border">
                 <Link href="https://www.facebook.com/farhan.mahtab.56">
                   <AiFillFacebook size={20} />
                 </Link>

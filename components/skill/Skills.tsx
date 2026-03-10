@@ -66,9 +66,9 @@ const SkillCategorySection: React.FC<SkillCategorySectionProps> = ({
 }): React.ReactElement => (
   <>
     <div>
-      <p className="py-4 text-green-200 text-xl font-semibold">{title}</p>
+      <p className="py-4 text-primary text-xl font-bold">{title}</p>
     </div>
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-green-200 mb-8">
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-foreground mb-8">
       {skills.map((skill) => (
         <SkillCard key={skill.id} title={skill.title} background={skill.icon} />
       ))}
@@ -80,10 +80,10 @@ const Skills: React.FC = (): React.ReactElement => {
   return (
     <section id="skills" className="w-full lg:h-screen p-2 mt-6">
       <div className="max-w-310 m-auto flex flex-col justify-center h-full">
-        <p className="text-xl tracking-widest uppercase text-[#4f8e38]">
+        <p className="text-xl tracking-widest uppercase text-primary font-bold">
           Skills
         </p>
-        <h2 className="py-4 text-green-200 text-4xl font-bold">
+        <h2 className="py-4 text-foreground text-4xl font-bold">
           Things I can do
         </h2>
         {SKILL_CATEGORIES.map((category) => (

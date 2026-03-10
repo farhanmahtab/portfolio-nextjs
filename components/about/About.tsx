@@ -32,12 +32,13 @@ export default function About() {
     >
       <div className="max-w-310 m-auto w-full md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
-          <p className="uppercase text-xl tracking-widest text-theme">
+          <p className="uppercase text-xl tracking-widest text-primary font-bold">
             About Me
           </p>
-          <h2 className="py-4 text-green-200 text-4xl font-bold">Who I Am.</h2>
+          <h2 className="py-4 text-foreground text-4xl font-bold ">Who I Am.</h2>
+    
 
-          <p className="py-2 text-green-100 leading-relaxed">
+          <p className="py-2 text-muted-foreground leading-relaxed">
             I am a Software Engineer with strong experience building and
             maintaining scalable backend systems and full-stack web applications
             in production environments. I specialize in designing clean,
@@ -46,7 +47,7 @@ export default function About() {
             maintainability, and real user impact.
           </p>
 
-          <p className="py-2 text-green-100 leading-relaxed">
+          <p className="py-2 text-muted-foreground leading-relaxed">
             I have hands-on experience across the full software development
             lifecycle, working extensively with technologies such as Ruby on
             Rails, Node.js, Next.js, React, PostgreSQL, MySQL, MongoDB, Redis,
@@ -55,7 +56,7 @@ export default function About() {
             applications that process large datasets efficiently.
           </p>
 
-          <p className="py-2 text-green-100 leading-relaxed">
+          <p className="py-2 text-muted-foreground leading-relaxed">
             Currently, I work as a Software Engineer at{" "}
             <ExternalLink href={EXTERNAL_LINKS.bizotion.href}>
               {EXTERNAL_LINKS.bizotion.text}
@@ -67,7 +68,7 @@ export default function About() {
             product teams to deliver reliable, user-focused features.
           </p>
 
-          <p className="py-2 text-green-100 leading-relaxed">
+          <p className="py-2 text-muted-foreground leading-relaxed">
             Previously at{" "}
             <ExternalLink href={EXTERNAL_LINKS.shellbeehaken.href}>
               {EXTERNAL_LINKS.shellbeehaken.text}
@@ -82,7 +83,7 @@ export default function About() {
             helped mentor interns and junior engineers.
           </p>
 
-          <p className="py-2 text-green-100 leading-relaxed">
+          <p className="py-2 text-muted-foreground leading-relaxed">
             Beyond my professional work, I have a strong foundation in
             problem-solving and algorithms, having solved over 500 problems
             across platforms such as Codeforces, LeetCode, and HackerRank. This
@@ -90,7 +91,7 @@ export default function About() {
             optimization, and system design.
           </p>
 
-          <p className="py-2 text-green-100 leading-relaxed">
+          <p className="py-2 text-muted-foreground leading-relaxed">
             I hold a B.Sc. in Software Engineering from{" "}
             <ExternalLink href={EXTERNAL_LINKS.university.href}>
               {EXTERNAL_LINKS.university.text}

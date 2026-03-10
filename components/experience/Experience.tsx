@@ -53,10 +53,10 @@ const Experience: FC = () => {
   return (
     <div id="experience" className="w-full mt-12">
       <div className="max-w-310 mx-auto mt-10 px-2">
-        <p className="text-xl font-semibold tracking-widest uppercase text-theme">
+        <p className="text-xl font-semibold tracking-widest uppercase text-primary">
           Experience
         </p>
-        <h2 className="py-2 tracking-widest text-green-200">
+        <h2 className="py-2 tracking-widest text-foreground font-bold text-3xl">
           Where I&#39;ve Worked
         </h2>
       </div>
