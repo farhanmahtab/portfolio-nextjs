@@ -130,7 +130,8 @@ const Navbar = () => {
     >
       <div className="flex justify-between items-center w-full h-full px-4 2xl:px-16 max-w-7xl mx-auto">
         <Link href="/" className="shrink-0">
-          <h1 className="text-2xl font-bold text-primary tracking-tight hover:scale-105 transition-transform">MAHI</h1>
+          {/* <h1 className="text-2xl font-bold text-primary tracking-tight hover:scale-105 transition-transform">MAHI</h1> */}
+          {/*add logo */}
         </Link>
 
         <div className="flex items-center gap-8">
