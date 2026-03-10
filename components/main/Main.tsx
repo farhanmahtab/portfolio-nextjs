@@ -35,7 +35,7 @@ export default function Main() {
           
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 py-8">
             <Link 
-              href="/farhan_mahi_resume.pdf" 
+              href="/mahi_resume.pdf"
               target="_blank" 
               className="px-8 py-3 bg-[#4f8e38] text-white rounded-full font-bold text-lg shadow-lg hover:bg-[#3d6e2b] transition-all duration-300 hover:scale-105 active:scale-95 flex items-center gap-2"
               download
