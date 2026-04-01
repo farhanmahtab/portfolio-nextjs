@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import { motion } from "framer-motion";
 import { GraduationCap, School, BookOpen } from "lucide-react";
 import EducationCard from "./EducationCard";
@@ -10,21 +9,21 @@ const EDUCATION_DATA = [
     institution: "Shahjalal University of Science and Technology , Sylhet",
     degree: "B.Sc. in Software Engineering",
     period: "2018 - 2023",
-    // description: "Focused on core computing principles, software architecture, and advanced web technologies. Graduated with a CGPA of 3.73.",
+    description: "Focused on core computing principles, software architecture, and advanced web technologies. Graduated with a CGPA of 3.73.",
     icon: GraduationCap,
   },
   {
     institution: "Notre Dame College, Dhaka",
     degree: "Higher Secondary Certificate (HSC)",
     period: "2016 - 2018",
-    // description: "Specialized in Science. Developed a strong foundation in Mathematics, Physics, and analytical problem-solving.",
+    description: "Specialized in Science. Developed a strong foundation in Mathematics, Physics, and analytical problem-solving.",
     icon: School,
   },
   {
     institution: "Rani Bilashmoni Govt. Boys high School, Gazipur",
     degree: "Secondary School Certificate (SSC)",
     period: "2011 - 2016",
-    // description: "Completed secondary education with focused studies in basic sciences and information technology.",
+    description: "Completed secondary education with focused studies in basic sciences and information technology.",
     icon: BookOpen,
   },
 ];
