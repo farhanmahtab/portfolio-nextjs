@@ -61,7 +61,7 @@ const Experience: FC = () => {
         </h2>
       </div>
 
-      <div className="max-w-310 mx-auto px-2 py-10 lg:mx-20">
+      <div className="max-w-310 mx-auto px-2 py-10">
         {experiences.map((exp, index) => (
           <ExperienceItem
             key={index}

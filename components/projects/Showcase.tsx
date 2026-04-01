@@ -1,6 +1,6 @@
 "use client";
-import React, { FC } from "react";
-import ShowcaseItem from "./ShowcaseItem";
+import { FC } from "react";
+import ProjectItem from "./ProjectItem";
 import { PROJECTS } from "@/lib/projects";
 import { motion } from "framer-motion";
 
@@ -28,12 +28,13 @@ const Showcase: FC = () => {
       </div>
       <div className="grid md:grid-cols-2 gap-10 max-w-7xl mx-auto px-4">
         {PROJECTS.map((project, index) => (
-          <ShowcaseItem
+          <ProjectItem
             key={project.id}
             id={project.id}
             title={project.title}
             backgroundImg={project.backgroundImg}
             desc={project.shortDesc}
+            showLink={true}
           />
         ))}
       </div>

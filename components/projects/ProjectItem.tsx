@@ -5,18 +5,20 @@ import Link from "next/link";
 import { StaticImageData } from "next/image";
 import { motion } from "framer-motion";
 
-interface ShowcaseItemProps {
+interface ProjectItemProps {
   id: string;
   title: string;
   backgroundImg: StaticImageData;
   desc: string;
+  showLink: boolean;
 }
 
-const ShowcaseItem: FC<ShowcaseItemProps> = ({
+const ProjectItem: FC<ProjectItemProps> = ({
   id,
   title,
   backgroundImg,
   desc,
+  showLink = true,
 }) => {
   return (
     <motion.div 
@@ -36,14 +38,16 @@ const ShowcaseItem: FC<ShowcaseItemProps> = ({
           {title}
         </h3>
         <p className="text-gray-200 text-center mb-6 line-clamp-2">{desc}</p>
-        <Link href={`/projects/${id}`}>
-          <p className="px-8 py-3 bg-[#4f8e38] text-white rounded-full font-bold text-lg cursor-pointer transform transition hover:scale-105 active:scale-95 shadow-lg">
-            More info
-          </p>
-        </Link>
+        {showLink && (
+          <Link href={`/projects/${id}`}>
+            <p className="px-8 py-3 bg-[#4f8e38] text-white rounded-full font-bold text-lg cursor-pointer transform transition hover:scale-105 active:scale-95 shadow-lg">
+              More info
+            </p>
+          </Link>
+        )}
       </div>
     </motion.div>
   );
 };
 
-export default ShowcaseItem;
+export default ProjectItem;
